@@ -1,0 +1,132 @@
+html,body { 
+    margin:0; 
+    padding:0; 
+    height: 100vh; 
+    width:100%; 
+}
+
+header{
+    height:125px;
+    background-color:bisque;
+    position:sticky;
+    top:0px;
+    z-index: 1000;
+}
+
+.header-container{
+    display:flex;
+    flex-direction: row;
+    height:100px;
+    background-color:powderblue;
+    margin-top:-10px;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.menu-item{
+    display:flex;
+    max-height:20px;
+    background-color:red; 
+    align-self: center;
+    max-width:150px;
+    justify-content: center;
+}
+
+.header-container > .menu-item{
+    padding:20px;
+}
+
+.logo{
+    display:flex;
+    width: 150px;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    background-color:green;
+    min-height:calc(100% - 270px);
+    justify-content: space-around;
+    
+}
+
+.main-container{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+
+article{
+    display:flex;
+    flex-direction: column;
+    padding:25px;
+
+}
+
+aside{
+    display:flex;
+    right:0;
+    justify-content:flex-start;
+    flex-direction: column;
+    background-color:orange;
+    min-width:150px;
+    padding:25px;
+    width:20%;
+}
+
+aside > .menu-item{
+    display:flex;
+    width:100%;
+    padding:20px 0 20px 0;
+    border-bottom: 1px solid black;
+}
+
+
+footer{
+    display:flex;
+    background-color: lightyellow;
+    height:150px;
+}
+
+
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+    padding-top:25px;
+    padding-left:25px;
+    padding-right:25px;
+    margin-bottom:25px;
+}
+
+.footer-item{
+    display:flex;
+    justify-content:center;
+}
+
+
+@media screen and (max-width:416px){
+        
+    .header-container{
+        display:flex;
+        flex-direction: row;
+        height:100px;
+        background-color:lightgreen;
+        padding:0px;
+        justify-content: center;
+        align-content: center;
+    }
+    .menu-item{
+        display:flex;
+        flex-grow:1;
+        background-color:violet;
+        align-self: center;
+    }
+    
+    .logo{
+        display:flex;
+        background-color:aquamarine;
+    }
+}
