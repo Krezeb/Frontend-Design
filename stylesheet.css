@@ -86,7 +86,7 @@ main{
     display:flex;
     flex-direction: row;
     background-color: aliceblue;
-    width:80%;
+    width:80% ;
 }
 
 article{
