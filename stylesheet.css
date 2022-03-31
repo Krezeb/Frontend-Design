@@ -3,10 +3,12 @@ html,body {
     padding:0; 
     height: 100vh; 
     width:100%; 
+    background-color:aliceblue;
+    font-family: "RM Neue",sans-serif;
 }
 
 header{
-    height:125px;
+    height:152px;
     background-color:bisque;
     position:sticky;
     top:0px;
@@ -16,22 +18,52 @@ header{
 .header-container{
     display:flex;
     flex-direction: row;
-    height:100px;
+    position:absolute;
+    top:0;
+    left:0;
+    height:150px;
+    width:100%;
     background-color:powderblue;
-    margin-top:-10px;
     justify-content: space-evenly;
     align-content: center;
-
 }
 
-.menu-item{
+/* .menu-item{
     display:flex;
     max-height:20px;
     background-color:red; 
     align-self: center;
     max-width:150px;
     justify-content: center;
-}
+} */
+
+.menu-item {
+
+    /* Lachlan-original   */
+    display: flex;
+    align-items: center;
+    align-self: center;
+    background-color: #0276FF;
+    max-width: 150px;
+    justify-content: center;
+    /* ------------------- */
+  
+    /* Modified button-22 */
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    flex-shrink: 0;
+    
+    font-family: "RM Neue",sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    padding: 10px 21px;
+    text-align: center;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  }
 
 .header-container > .menu-item{
     padding:20px;
@@ -45,17 +77,16 @@ header{
 main{
     display:flex;
     flex-direction: row;
-    background-color:green;
     min-height:calc(100% - 270px);
     justify-content: space-around;
-    
 }
 
 .main-container{
     position: relative;
     display:flex;
     flex-direction: row;
-    background-color: aquamarine;
+    background-color: aliceblue;
+    width:80%;
 }
 
 article{
@@ -67,13 +98,16 @@ article{
 
 aside{
     display:flex;
-    right:0;
     justify-content:flex-start;
     flex-direction: column;
-    background-color:orange;
+    background-color:aliceblue;
     min-width:150px;
     padding:25px;
     width:20%;
+    border:1px solid black;
+    margin-top:48px;
+    gap:10px;
+    height:fit-content;
 }
 
 aside > .menu-item{
